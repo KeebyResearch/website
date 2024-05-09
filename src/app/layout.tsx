@@ -7,6 +7,11 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "KEEBY",
   description: "Shipping between infra and user",
+  icons: {
+    icon: "./icon.ico",
+    shortcut: "./icon.ico",
+    apple: "./apple-icon.png",
+  },
 };
 
 export default function RootLayout({
