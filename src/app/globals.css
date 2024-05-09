@@ -31,3 +31,11 @@ body {
     text-wrap: balance;
   }
 }
+
+@font-face {
+  font-family: 'Upheaval';
+  font-style: 'normal';
+  font-weight: 400;
+  src: url('/assets/fonts/upheaval.ttf') format('truetype');
+}
+
