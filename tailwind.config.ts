@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         "keeby-orange": "#ff5800",
         "keeby-white": "#ffffff",
+        "keeby-black": "#000000",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

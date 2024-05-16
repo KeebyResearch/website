@@ -1,21 +1,53 @@
+import { Roboto } from "next/font/google";
+import "./globals.css";
+
+const roboto = Roboto({ subsets: ["latin"], weight: "700" });
+
 export default function Home() {
   return (
-    <main className="flex items-center justify-center p-16 w-screen h-screen bg-keeby-orange flex-col">
+    <main className="flex flex-col items-center p-16 w-screen min-h-screen bg-keeby-orange">
       <img
         className="w-full max-w-[300px]"
         src="/assets/keeby-square.png"
         alt="KEEBY Logo"
       />
-      <h1 className="font-keeby-default text-6xl">KEEBY</h1>
-      <h2 className="font-keeby-default text-xl mb-8">Web3 Middleware</h2>
-      <a
-        href="https://twitter.com/keebytech"
-        className="font-keeby-default text-2xl hover:underline text-center bg-black p-4 rounded-xl"
+      <h1 className="font-keeby-default text-6xl text-center">KEEBY</h1>
+      <h2 className="font-keeby-default text-xl text-center bg-keeby-black py-2 px-4 rounded-xl">
+        Web3 Middleware
+      </h2>
+      <section className={`w-full max-w-[600px] ${roboto.className}`}>
+        <p className="my-4 text-xl text-center">
+          We&apos;re a team of deep specialists building technology between{" "}
+          <strong className="underline">hardware</strong> and{" "}
+          <strong className="underline">consumer</strong> in Web3
+        </p>
+      </section>
+      <section
+        className={`w-full flex flex-col items-center ${roboto.className}`}
       >
-        For <strong className="text-4xl">inquiries</strong>, send us a{" "}
-        <strong className="text-4xl">DM</strong> on{" "}
-        <strong className="text-4xl">X</strong>
-      </a>
+        <p className="mt-8 mb-4 w-full text-base text-center">
+          For a <strong className="underline">service quote</strong>,{" "}
+          <strong className="underline">acquisition LOI</strong>, and{" "}
+          <strong className="underline">inquiries</strong> send us an email:
+        </p>
+        <a
+          href="https://twitter.com/keebytech"
+          className={`hover:underline text-center bg-keeby-black p-4 rounded-xl ${roboto.className}`}
+        >
+          {`keeby` + `.` + `engineering` + `@` + `gmail` + `.` + `com`}
+        </a>
+        <span className="flex justify-center items-center my-4">
+          <p className="w-full text-base text-center">
+            Alternatively, you can follow us on:&nbsp;
+          </p>
+          <a
+            href="https://twitter.com/keebytech"
+            className={`hover:underline text-center ${roboto.className}`}
+          >
+            Twitter
+          </a>
+        </span>
+      </section>
     </main>
   );
 }
