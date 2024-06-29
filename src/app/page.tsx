@@ -34,7 +34,7 @@ export default function Home() {
           href="https://twitter.com/keebytech"
           className={`hover:underline text-center bg-keeby-black p-4 rounded-xl ${roboto.className}`}
         >
-          {`keeby` + `.` + `engineering` + `@` + `gmail` + `.` + `com`}
+          {`engineering` + `@` + `keeby` + `.` + `xyz`}
         </a>
         <span className="flex justify-center items-center my-4">
           <p className="w-full text-base text-center">
