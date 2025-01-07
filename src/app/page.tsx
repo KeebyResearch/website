@@ -11,17 +11,10 @@ export default function Home() {
         src="/assets/keeby-square.png"
         alt="KEEBY Logo"
       />
-      <h1 className="font-keeby-default text-6xl text-center">KEEBY</h1>
+      <h1 className="font-keeby-default text-6xl text-center">KEEBY RESEARCH</h1>
       <h2 className="font-keeby-default text-xl text-center bg-keeby-black py-2 px-4 rounded-xl">
-        Web3 Middleware
+	  Protocols, Networks, and Products
       </h2>
-      <section className={`w-full max-w-[600px] ${roboto.className}`}>
-        <p className="my-4 text-xl text-center">
-          We&apos;re a team of deep specialists building technology between{" "}
-          <strong className="underline">hardware</strong> and{" "}
-          <strong className="underline">consumer</strong> in Web3
-        </p>
-      </section>
       <section
         className={`w-full flex flex-col items-center ${roboto.className}`}
       >
